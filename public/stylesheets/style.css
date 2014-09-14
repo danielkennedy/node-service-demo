@@ -1,0 +1,246 @@
+/*
+Logo Blue: rgb(1, 176, 241)
+Logo Gray: rgb(64, 64, 64)
+*/
+body {
+  font-size: 18px;
+  /*font-family: 'Merriweather', Georgia, serif;*/
+  font-family: 'FontAwesome';
+  color: rgb(64, 64, 64);
+  background-color: #fff;
+}
+
+.container {
+  padding: 40px 16px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 757px;
+  }
+}
+.container-narrow > hr {
+  margin: 1.5em 0;
+}
+
+hr {
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #bbb;
+  margin: 1em 0; 
+  padding: 0; 
+}
+
+hr.separator {
+    padding: 0;
+    border: none;
+    border-top: medium double rgb(64, 64, 64);
+    color: rgb(64, 64, 64);
+    text-align: center;
+}
+
+hr.separator:after {
+    content: "\f132";
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: rgb(64, 64, 64);
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 22px 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+a, a:visited, a:hover, a:focus, a:active {
+  color: rgb(64, 64, 64);
+}
+
+.principle {
+  line-height: 1.5em;
+  padding: 12px 0;
+}
+
+.self-evident {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.preamble {
+  /*font-style: italic;*/
+}
+
+.signatories {
+  margin: 20px 0;
+}
+
+.signature {
+  margin: 6px;
+  font-style: normal;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(64, 64, 64);
+}
+
+.endorsement {
+}
+
+/*
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: "\f10d";
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+*/
+
+.license {
+  text-decoration: underline;
+  margin-top: 1em;
+  text-align: right;
+  font-size: .6em;
+}
+
+.btn-left {
+  padding: 8px;
+  text-align: left;
+}
+
+.btn-twitter, 
+.btn-twitter:visited, 
+.btn-twitter:hover, 
+.btn-twitter:focus, 
+.btn-twitter:active {
+  background-color: rgb(64, 153, 255);
+  color: #fff;
+  margin: 8px 0;
+}
+
+.btn-linkedin, 
+.btn-linkedin:visited, 
+.btn-linkedin:hover, 
+.btn-linkedin:focus, 
+.btn-linkedin:active {
+  background-color: rgb(3, 101, 154);
+  color: #fff;
+  margin: 8px 0;
+}
+
+.btn-googleplus, 
+.btn-googleplus:visited, 
+.btn-googleplus:hover, 
+.btn-googleplus:focus, 
+.btn-googleplus:active {
+  background-color: rgb(221, 75, 57);
+  color: #fff;
+  margin: 8px 0;
+}
+
+.btn-facebook, 
+.btn-facebook:visited, 
+.btn-facebook:hover, 
+.btn-facebook:focus, 
+.btn-facebook:active {
+  background-color: rgb(51, 87, 149);
+  color: #fff;
+  margin: 8px 0;
+}
+
+.btn-blue, 
+.btn-blue:visited, 
+.btn-blue:hover, 
+.btn-blue:focus, 
+.btn-blue:active {
+  background-color: rgb(1, 176, 241);
+  color: #fff;
+  margin: 8px 0;
+}
+
+.btn-gray, 
+.btn-gray:visited, 
+.btn-gray:hover, 
+.btn-gray:focus, 
+.btn-gray:active {
+  color: #fff;
+  background-color: rgb(64, 64, 64);
+  margin: 8px 0;
+}
+
+.foundation-banner, 
+.foundation-banner:visited, 
+.foundation-banner:hover, 
+.foundation-banner:focus, 
+.foundation-banner:active {
+  font-size: 40px;
+  color: #fff;
+}
+
+.navbar-gray {
+  border-radius: 0;
+  line-height: 40px;
+  background-color: rgb(64, 64, 64);
+  color: #fff;
+  padding: 24px 0;
+}
+
+.tile {
+  height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  border-radius: 6px;
+  padding: 30px 0 0;
+  background-color: rgb(64, 64, 64);
+  color: #fff;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  border-top: 1px solid rgb(64, 64, 64);
+}
+
+.tile h3 {
+  text-align: center;
+  padding: 0 0 30px;
+  margin: 0 0 30px;
+  border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+.modal-col-1 {
+  width: 45%;
+  float: left;
+}
+
+.modal-col-2 {
+  width: 45%;
+  float: right;
+}
+
+#status-panel {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	width: 24px;
+	height: 24px;
+	background-size: 100%;
+	z-index: 9999999990;
+}
